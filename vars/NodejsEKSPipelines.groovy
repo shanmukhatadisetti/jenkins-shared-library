@@ -7,8 +7,8 @@ def call(Map configMap){
             appVersion = ""
             REGION = "us-east-1"
             ACC_ID = "430774481266"
-            PROJECT = "roboshop"
-            COMPONENT = "catalogue"
+            PROJECT = configMap.get("project")
+            COMPONENT = configMap.get("component")
             GITHUB_REPO = "shanmukhatadisetti-devops/catalogue-ci"
 
         }
